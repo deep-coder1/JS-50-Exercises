@@ -1,0 +1,46 @@
+<!-- Event Bubbling and Capturing:*
+Create multiple nested elements and observe 
+the event bubbling and capturing behavior. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbling and capturing</title>
+</head>
+<body>
+    <div>
+        Lorem <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Nobis ducimus temporibus pariatur, autem quis saepe rem accusamus fugit optio dolore totam laboriosam omnis nulla repellat fuga, adipisci maxime eligendi. Eaque.
+    </div>
+
+    <script>
+        let parent = document.querySelector("div");
+        let child = document.querySelector("strong");
+
+        parent.addEventListener("click", () => {
+            console.log("Parent");
+        },true)
+
+        child.addEventListener("click", () => {
+            console.log("Child");
+        },true)
+    </script>
+</body>
+</html>
+<!-- 
+Output:-
+Web-
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ducimus temporibus pariatur, autem quis saepe rem accusamus fugit optio dolore totam laboriosam omnis nulla repellat fuga, adipisci maxime eligendi. Eaque.
+
+Cansole-
+Parent
+Child
+Parent
+Child
+
+*
+When i click parent sample text that time show output Parent in console.
+And when i click child strong text that time show output Parent Child in console. -->
+
