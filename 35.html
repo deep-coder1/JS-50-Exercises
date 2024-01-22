@@ -37,7 +37,8 @@ notify that the countdown is completed. -->
                 updateTimerDisplay();
             }
             else{
-                //
+                clearInterval(timeInterval);
+                alert(`Countdown Completed`);
             }
         }
 
