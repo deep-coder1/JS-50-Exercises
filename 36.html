@@ -1,0 +1,48 @@
+<!-- Set Timeout:*
+Write the JavaScript code to implement the
+quote-changing feature. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36</title>
+</head>
+<body>
+    <h1>Motivational Quotes</h1>
+    <div id="quoteDisplay">Loading...</div>
+
+    <script>
+        const quotes = [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsum sunt deserunt reprehenderit repudiandae beatae, voluptas et quae voluptatibus, consequatur ex architecto sint placeat consectetur unde. Harum aut neque rem illo, dolore nam mollitia. Illum molestias non omnis cupiditate architecto, adipisci fugit quam, blanditiis qui tempore quos voluptate eaque inventore.", "Subscribe to Drop X Out"
+        ];
+
+        function displayRandomQuotes(){
+            const quoteDisplay = document.getElementById("quoteDisplay");
+            const randomIndex = Math.floor(Math.random()*quotes.length);
+            quoteDisplay.textContent = quotes [randomIndex];
+        }
+
+        displayRandomQuotes();
+
+        function chnageQuotePeriodcally(){
+            displayRandomQuotes();
+            setTimeout(chnageQuotePeriodcally,10000);
+        }
+
+        chnageQuotePeriodcally();
+    </script>
+</body>
+</html>
+
+<!-- Output:- 
+
+Motivational Quotes
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsum sunt deserunt reprehenderit repudiandae beatae, voluptas et quae voluptatibus, consequatur ex architecto sint placeat consectetur unde. Harum aut neque rem illo, dolore nam mollitia. Illum molestias non omnis cupiditate architecto, adipisci fugit quam, blanditiis qui tempore quos voluptate eaque inventore.
+
+After 10 Seconds:
+
+Motivational Quotes
+Subscribe to Drop X Out -->
