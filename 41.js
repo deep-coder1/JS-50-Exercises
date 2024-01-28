@@ -19,8 +19,16 @@ class Magazine extends Book{
         this.issue = issue;
     }
     getIssueNumber(){
-        return this.issue
+        return this.issue;
     }
 }
 
 const myMagazine = new Magazine('Dxo','Zayn',2024,5);
+
+console.log(myMagazine.title);
+
+console.log(myMagazine.getIssueNumber());
+
+// Output:- 
+// Dxo
+// 5
