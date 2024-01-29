@@ -26,8 +26,11 @@ console.log(person.studentId); // person cant access studentId
 
 console.log(person);
 
+console.log(student.introduce());
+
 // Output:- 
 // Deepak
 // 42.js:24 12345
 // 42.js:25 undefined
-// 42.js:27 {name: 'Deepak', age: '24', introduce: ƒ}age: "24"introduce: ƒ ()name: "Deepak"[[Prototype]]: Object
+// 42.js:27 {name: 'Deepak', age: '24', introduce: ƒ}
+// 42.js:29 Hi my name is Deepak and I am 24 year old
