@@ -28,3 +28,22 @@ console.log(reverseOdd("One Two Four"));
 // Output:- 
 // (3) ['One', 'Two', 'Four']
 // 44.js:26 enO owT Four
+
+
+
+
+// Internet Copy Edge AI 
+
+// function reverseWordsWithOddLength(str) {
+//     return str.split(' ').map(word => {
+//       if (word.length % 2 !== 0) {
+//         return word.split('').reverse().join('');
+//       }
+//       return word;
+//     }).join(' ');
+//   }
+  
+
+//   const str = 'Given a string, reverse all the words which have odd length. The even length words are not changed.';
+// const reversedStr = reverseWordsWithOddLength(str);
+// console.log(reversedStr);
